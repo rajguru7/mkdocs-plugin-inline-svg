@@ -17,6 +17,7 @@ def replace_with_file_content(basepath, match, extension):
         filename))
     return read_file(filename)
 
+
 class InlineSvgPlugin(BasePlugin):
 
     config_scheme = (
