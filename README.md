@@ -27,6 +27,17 @@ plugins:
 
 More information about plugins in the MkDocs documentation
 
+### Options
+
+You can filter with the extension to select files to be inline. Useful to mix regular and inlined svgs.:
+
+```
+plugins:
+    - search
+    - inline-svg:
+        extension: ".inline.svg"
+```
+
 ## Credits
 
 I am not really a Python programmer, so I have borrowed plugin setup / utils /
