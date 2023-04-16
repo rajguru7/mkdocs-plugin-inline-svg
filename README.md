@@ -45,3 +45,8 @@ inspiration from:
 
 * https://github.com/stuebersystems/mkdocs-img2fig-plugin
 * https://github.com/athackst/mkdocs-simple-plugin
+
+**rajguru7**
+I have cloned this from <https://gitlab.com/nicolas.dupont/mkdocs-plugin-inline-svg/-/tree/master> which is a fork of <https://gitlab.com/craig0990/mkdocs-plugin-inline-svg>
+
+Credits to @craig0990 and @nicolar.dupont (GitLab) for the base plugin.
