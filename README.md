@@ -1,4 +1,4 @@
-# mkdocs-plugin-inline-svg
+# mkdocs-plugin-inline-svg-mod
 
 > Reads SVG images referenced from Markdown and replaces them with the SVG
 > file content
@@ -11,7 +11,7 @@ fully functional.
 
 Install the package with pip:
 
-`pip install mkdocs-plugin-inline-svg`
+`pip install mkdocs-plugin-inline-svg-mod`
 
 Enable the plugin in your mkdocs.yml:
 
@@ -36,6 +36,26 @@ plugins:
     - search
     - inline-svg:
         extension: ".inline.svg"
+        delete: "<regex-string>"
+```
+
+The delete parameter will remove the matching string from the SVG file content.
+Example:
+
+**Sample SVG content**
+```xml
+<svg>
+<defs>
+</defs>
+<svg>
+```
+
+**YAML config**
+`delete: "(?s)<defs>.*</defs>|\n"`
+
+**SVG content loaded into HTML will become:**
+```xml
+<svg></svg>
 ```
 
 ## Credits
